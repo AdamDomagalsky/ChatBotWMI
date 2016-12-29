@@ -1,0 +1,19 @@
+! version = 2.0
+
+
++ rum
+- <call>room</call>	
+
+
++ (pan|pani|profesor) [*] * *
+- Kim jest <star1> <star2>?
+
+//Phone num
++ [*] (nr|numer|telefonu|telefon) [*] * *
+- Nr do <star2> <star3> to 665 458 789
+
++ mail (do|) *
+- mail: <star2>
+
++ [*] * (ma|posiada) (adres e-mail|e-mail|maila|mail|email|skrzynke elektroniczna)?
+- Oczywiscie, każdy pracownik wmi posiada pocztę elektroniczna, adres <star2>: lol@o2.pl

@@ -1,0 +1,7 @@
+! version = 2.0
+
+> object room python
+	import sys
+	st="Python msg"
+	return st
+< object 
