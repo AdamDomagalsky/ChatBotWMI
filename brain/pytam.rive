@@ -15,5 +15,5 @@
 + mail (do|) *
 - mail: <star2>
 
-+ [*] * (ma|posiada) (adres e-mail|e-mail|maila|mail|email|skrzynke elektroniczna)?
++ [*] * (ma|posiada) [*] (e-mail|maila|mail|email|skrzynke elektroniczna)?
 - Oczywiscie, każdy pracownik wmi posiada pocztę elektroniczna, adres <star2>: lol@o2.pl
