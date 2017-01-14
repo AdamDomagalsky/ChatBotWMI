@@ -9,11 +9,11 @@
 - <call>fullInfo <star2> <star2></call> {@ correct}
 
 //WHERE
-+ (where|gdzie) [is|jest|znajde] [@lvls] * *
-- <call>whereis <star2> <star3></call> {@ correct}
++ (where|gdzie) (is|jest|znajde) [@lvls] * *
+- <call>whereis <star2> <star4></call> {@ correct}
 
-+ (where|gdzie) [is|jest|znajde] [@lvls] *
-- <call>whereis <star1> <star2></call> {@ correct}
++ (where|gdzie) (is|jest|znajde) [@lvls] *
+- <call>whereis <star1> <star3></call> {@ correct}
 
 + (poszukuje|szukam) [pokoju|gabinetu] [@lvls] * *
 - <call>whereis <star2> <star3></call> {@ correct}
@@ -34,8 +34,12 @@
 - <call>when <star1> <star2></call> {@ correct}
 
 //E-Mail a-dress
-+ [*] (e-mail|mail|email|mejl|skrzynka [pocztowa|odbiorcza]) [do] [@lvls] * *
++ [*] (e-mail|mail|email|mejl|mailowy|mejlowy|skrzynka [pocztowa|odbiorcza]) [do] [@lvls] * *
 - <call>mail <star2> <star3></call> {@ correct}
+
++ [*] (e-mail|mail|email|mejl|mailowy|mejlowy|skrzynka [pocztowa|odbiorcza]) [do] [@lvls] *
+- <call>mail <star2> <star2></call> {@ correct}
+
 
 //Phone numba
 + [*] numer [kontaktowy|telefonu] [do] [@lvls] * *
@@ -45,10 +49,10 @@
 - <call>phone <star1> <star2></call> {@ correct}
 
 //Fackulty
-+ [*] jest [@lvls] * *
++ [*] skad jest [@lvls] * *
 - <call>faculty <star1> <star2></call> {@ correct}
 
-+ [*] jest [@lvls] *
++ [*] skad jest [@lvls] *
 - <call>faculty <star1> <star1></call> {@ correct}
 
 //Website ?
@@ -67,10 +71,10 @@
 
 //whoInRoom
 + [*] (znajde|siedzi|znajduje|urzeduje) [*] (pokoju|gabinecie|pomieszczeniu) *
-- <star3><call>whoInRoom <star3> <star</call>
+- <call>whoInRoom <star3> <star</call>
 
 + pokoj *
-- <star1><call>whoInRoom <star1></call>
+- <call>whoInRoom <star1></call>
 
 
 + correct

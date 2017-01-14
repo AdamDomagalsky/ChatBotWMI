@@ -47,16 +47,22 @@ def getInfo(sublink):
 	room = info['pokój']
 	phone = info['telefon']
 	mail = info['e-mail']
+
+	if 'strona internetowa' in info.keys():
+		web = "".join(info['strona internetowa'])
+	else:
+		web = 'No'
+
 	if 'dyżury' in info.keys():
-		when = "".join(info['dyżury'].split())
+		when = "\t".join(info['dyżury'].split())
 	else:
 		when = 'No'
 
-	return {'name':name, 'degree':degree, 'faculty':faculty,'lvl':lvl, 'position':position, 'room':room,'phone':phone, 'mail':mail, 'when':when}
+	return {'name':name, 'degree':degree, 'faculty':faculty,'lvl':lvl, 'position':position, 'room':room,'phone':phone, 'mail':mail,'website':web, 'when':when}
 
 
 with open('wmiStaff.tsv', 'a') as csvfile:
-	fieldnames = ['name', 'degree', 'faculty','lvl', 'position', 'room','phone' ,'mail', 'when']
+	fieldnames = ['name', 'degree', 'faculty','lvl', 'position', 'room','phone' ,'mail','website', 'when']
 	writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 	writer.writeheader()
 	for i in getStaff():

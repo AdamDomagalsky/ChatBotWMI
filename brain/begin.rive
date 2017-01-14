@@ -11,7 +11,7 @@
 ! var job      = pomocnik
 
 // lvls array
-! array lvls = magister mgr mgr. doktor dr dr. profesor prof prof. pan pani ziomek ziomala
+! array lvls = magister mgr mgr. doktor dr dr. profesor prof prof. pan pani ziomek ziomala pana pania
 
 
 // Substitutions
