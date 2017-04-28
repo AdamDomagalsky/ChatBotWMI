@@ -2,7 +2,6 @@
 
 # pip2 install unicodecsv
 
-
 from rivescript import RiveScript
 
 rs = RiveScript('utf8:true')
